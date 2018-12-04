@@ -18,11 +18,20 @@ namespace CrossPlatformPhonewordTest
         }
 
         [SetUp]
+
+        public void SetUp()
+
+        {
+
+            app = ConfigureApp.Android.ApkFile("../../../Phoneword/Phoneword.Android/bin/Debug/com.companyname.Phoneword-Signed.apk").StartApp();
+
+        }
         public void BeforeEachTest()
         {
             app = AppInitializer.StartApp(platform);
         }
 
+             
         [Test]
         public void WelcomeTextIsDisplayed()
         {

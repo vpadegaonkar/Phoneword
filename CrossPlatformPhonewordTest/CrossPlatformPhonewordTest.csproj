@@ -33,6 +33,10 @@
     <PackageReference Include="NUnitTestAdapter" Version="2.1.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Phoneword\Phoneword.Android\Phoneword.Android.csproj">
+      <Project>{5dc0c595-4395-4b71-809c-abfa88c4dbbe}</Project>
+      <Name>Phoneword.Android</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests.cs" />
